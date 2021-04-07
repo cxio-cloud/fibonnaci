@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Fibonnaci </title>
+		<meta charset="utf-8">
+		<h1> Sequência de Fibonnaci </h1>
+	</head>
+	<body>
+		<input type="button" value="Iniciar" id="btn-Iniciar"/>
+		<script type="text/javascript">
+			document.getElementById('btn-Iniciar').addEventListener('click', function() {
+			
+				var a, b, resultado;
+					a = 1;
+					b = 0;
+					resultado = b;
+				for (var i = 1; i < 100; i++)
+				{
+					document.write (resultado + "<br/>");
+					resultado = a + b;
+					a = b;
+					b = resultado;
+				}})
+		</script>
+	</body>
+</html>
